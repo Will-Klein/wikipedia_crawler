@@ -3,7 +3,6 @@ import time
 import requests
 from bs4 import BeautifulSoup
 
-
 # Função para coletar links presentes na página passada por parâmetro
 def coletar_links(pag):
     todos_links = pag.find(id="bodyContent").find_all("a")
