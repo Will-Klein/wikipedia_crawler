@@ -77,7 +77,7 @@ def main():
     visitados = set()
     para_visitar = [pag_inicial]
 
-    while len(visitados) < 31 and para_visitar:  # Continua se tiver URL para visitar
+    while len(visitados) < 5001 and para_visitar:  # Continua se tiver URL para visitar
         url = para_visitar.pop(0)
 
         if foi_visitado(url, visitados):
